@@ -59,6 +59,7 @@
             this.botonConvertir.TabIndex = 2;
             this.botonConvertir.Text = "Convertir";
             this.botonConvertir.UseVisualStyleBackColor = true;
+            this.botonConvertir.Click += new System.EventHandler(this.botonConvertir_Click);
             // 
             // textoSalida
             // 

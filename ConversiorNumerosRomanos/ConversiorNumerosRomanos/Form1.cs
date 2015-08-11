@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,20 @@ namespace ConversiorNumerosRomanos
 {
     public partial class MainWindow : Form
     {
+        private Convertidor convertidor;
+        private int entrada;
+        private string salida;
+
         public MainWindow()
         {
             InitializeComponent();
+            convertidor = new Convertidor();
+            entrada = 0;
+        }
+
+        private void botonConvertir_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
