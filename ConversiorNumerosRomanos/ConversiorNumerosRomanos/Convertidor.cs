@@ -63,6 +63,10 @@ namespace ConversiorNumerosRomanos
             salida = Convertir(120);
             Debug.Assert(salida == "CXX", "43 debe retornar CXX, retorna " + salida);
 
+            //prueba para 453
+            salida = Convertir(453);
+            Debug.Assert(salida == "CDLIII", "453 debe retornar CDLIII, retorna " + salida);
+
         }
         
 
