@@ -27,6 +27,11 @@ namespace ConversiorNumerosRomanos
         {
             string salida = "";
 
+            if (entrada > 999)
+            {
+                salida += "M";
+                entrada = entrada % 1000;
+            }
             if (entrada > 99)
             {
                 salida += centenas[entrada / 100];
@@ -66,6 +71,10 @@ namespace ConversiorNumerosRomanos
             //prueba para 453
             salida = Convertir(453);
             Debug.Assert(salida == "CDLIII", "453 debe retornar CDLIII, retorna " + salida);
+
+            //prueba para 1248
+            salida = Convertir(1248);
+            Debug.Assert(salida == "MCCXLVIII", "1248 debe retornar MCCXLVIII, retorna " + salida);
 
         }
         
