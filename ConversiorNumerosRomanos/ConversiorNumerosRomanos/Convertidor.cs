@@ -26,6 +26,7 @@ namespace ConversiorNumerosRomanos
         public string Convertir(int entrada)
         {
             string salida = "";
+
             if (entrada > 9)
             {
                 int decena = entrada / 10;
@@ -53,6 +54,11 @@ namespace ConversiorNumerosRomanos
             //prueba para 43
             salida = Convertir(43);
             Debug.Assert(salida == "XLIII", "43 debe retornar XLIII, retorna " + salida);
+
+            //prueba para 120
+            salida = Convertir(120);
+            Debug.Assert(salida == "CXX", "43 debe retornar CXX, retorna " + salida);
+
         }
         
 
