@@ -28,8 +28,9 @@ namespace ConversiorNumerosRomanos
             string salida = "";
             if (entrada > 9)
             {
-                entrada -= (entrada/10)*10;
-                salida += decenas[entrada/10];
+                int decena = entrada / 10;
+                salida += decenas[decena];
+                entrada -= decena*10;
             }
             salida += unidades[entrada];
             return salida;
