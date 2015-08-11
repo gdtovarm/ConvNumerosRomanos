@@ -29,8 +29,8 @@ namespace ConversiorNumerosRomanos
 
             if (entrada > 99)
             {
-                salida = "C";
-                entrada -= 100;
+                salida += centenas[entrada / 100];
+                entrada = entrada % 100;
             }
             if (entrada > 9)
             {
