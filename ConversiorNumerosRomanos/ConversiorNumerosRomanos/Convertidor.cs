@@ -76,6 +76,10 @@ namespace ConversiorNumerosRomanos
             salida = Convertir(1248);
             Debug.Assert(salida == "MCCXLVIII", "1248 debe retornar MCCXLVIII, retorna " + salida);
 
+            //prueba para 3972
+            salida = Convertir(1248);
+            Debug.Assert(salida == "MMMCMLXXII", "3972 debe retornar MMMCMLXXII, retorna " + salida);
+
         }
         
 
