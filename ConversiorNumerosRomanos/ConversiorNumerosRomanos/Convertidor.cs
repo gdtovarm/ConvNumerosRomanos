@@ -29,7 +29,7 @@ namespace ConversiorNumerosRomanos
 
             if (entrada > 999)
             {
-                salida += "M";
+                salida += millares[entrada / 1000];
                 entrada = entrada % 1000;
             }
             if (entrada > 99)
@@ -77,7 +77,7 @@ namespace ConversiorNumerosRomanos
             Debug.Assert(salida == "MCCXLVIII", "1248 debe retornar MCCXLVIII, retorna " + salida);
 
             //prueba para 3972
-            salida = Convertir(1248);
+            salida = Convertir(3972);
             Debug.Assert(salida == "MMMCMLXXII", "3972 debe retornar MMMCMLXXII, retorna " + salida);
 
         }
