@@ -28,30 +28,30 @@ namespace ConversiorNumerosRomanos
             string salida = "";
             if (entrada > 9)
             {
-                entrada -= 10;
-                salida += "X";
+                entrada -= (entrada/10)*10;
+                salida += decenas[entrada/10];
             }
             salida += unidades[entrada];
             return salida;
         }
 
         public void TestConvertidor(){
-
+            
             //prueba para 1
             string salida = Convertir(1);
-            Debug.Assert(salida == "I", "1 debe retornar I");
+            Debug.Assert(salida == "I", "1 debe retornar I, retorna "+salida);
 
             //pueba para 5
             salida = Convertir(5);
-            Debug.Assert(salida == "V", "5 debe retornar V");
+            Debug.Assert(salida == "V", "5 debe retornar V, retorna " + salida);
 
             //prueba para 16
             salida = Convertir(16);
-            Debug.Assert(salida == "XVI", "16 debe retornar XVI");
+            Debug.Assert(salida == "XVI", "16 debe retornar XVI, retorna " + salida);
 
             //prueba para 43
             salida = Convertir(43);
-            Debug.Assert(salida == "XLIII", "43 debe retornar XLIII");
+            Debug.Assert(salida == "XLIII", "43 debe retornar XLIII, retorna " + salida);
         }
         
 
