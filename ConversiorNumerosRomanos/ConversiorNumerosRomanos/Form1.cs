@@ -42,9 +42,9 @@ namespace ConversiorNumerosRomanos
 
         //Llama los metodos de prueba definidos en la clase convertidor.
         private void HacerPruebas() {
-            convertidor.test1();
-            convertidor.test5();
-            convertidor.test16();
+            convertidor.Test1();
+            convertidor.Test5();
+            convertidor.Test16();
         }
 
         //Retorna verdadero si pudo realizar la conversion, falso en caso contrario, y asigna valor entero a la entrada.

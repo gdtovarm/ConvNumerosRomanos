@@ -29,20 +29,20 @@ namespace ConversiorNumerosRomanos
         }
 
         //prueba para unidad
-        public void test1()
+        public void Test1()
         {
             string salida = Convertir(1);
             Debug.Assert(salida == "I", "1 debe retornar I");
         }
 
         //pueba para cinco
-        public void test5()
+        public void Test5()
         {
             string salida = Convertir(5);
             Debug.Assert(salida == "V", "5 debe retornar V");
         }
 
-        public void test16()
+        public void Test16()
         {
             string salida = Convertir(16);
             Debug.Assert(salida == "XVI", "16 debe retornar XVI");
