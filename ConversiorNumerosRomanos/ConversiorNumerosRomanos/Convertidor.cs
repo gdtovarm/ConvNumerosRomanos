@@ -25,7 +25,14 @@ namespace ConversiorNumerosRomanos
         //Metodo que a partir de la entrada numerica retorna una en cadena el numero romano 
         public string Convertir(int entrada)
         {
-            return unidades[entrada];
+            string salida = "";
+            if (entrada > 10)
+            {
+                entrada -= 10;
+                salida += "X";
+            }
+            salida += unidades[entrada];
+            return salida;
         }
 
         //prueba para unidad
