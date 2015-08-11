@@ -22,6 +22,9 @@ namespace ConversiorNumerosRomanos
             InitializeComponent();
             convertidor = new Convertidor();
             entrada = 0;
+
+            //Llama los metodos de prueba definidos en la clase convertidor.
+            convertidor.TestConvertidor();
         }
 
         //Llama al metodo de conversión
@@ -36,16 +39,10 @@ namespace ConversiorNumerosRomanos
             salida = convertidor.Convertir(entrada);
             textoSalida.Text = salida;
 
-            HacerPruebas();
 
         }
 
-        //Llama los metodos de prueba definidos en la clase convertidor.
-        private void HacerPruebas() {
-            convertidor.Test1();
-            convertidor.Test5();
-            convertidor.Test16();
-        }
+        
 
         //Retorna verdadero si pudo realizar la conversion, falso en caso contrario, y asigna valor entero a la entrada.
         private bool ValidarEntrada()
