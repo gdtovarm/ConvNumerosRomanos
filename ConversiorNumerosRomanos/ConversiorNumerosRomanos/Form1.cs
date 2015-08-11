@@ -28,6 +28,7 @@ namespace ConversiorNumerosRomanos
         {
             salida = convertidor.Convertir(entrada);
             convertidor.test1();
+            convertidor.test5();
         }
     }
 }

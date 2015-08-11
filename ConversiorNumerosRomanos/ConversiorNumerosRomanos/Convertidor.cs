@@ -32,5 +32,11 @@ namespace ConversiorNumerosRomanos
             string salida = Convertir(1);
             Debug.Assert(salida == "I", "1 debe retornar I");
         }
+
+        public void test5()
+        {
+            string salida = Convertir(5);
+            Debug.Assert(salida == "V", "5 debe retornar V");
+        }
     }
 }
