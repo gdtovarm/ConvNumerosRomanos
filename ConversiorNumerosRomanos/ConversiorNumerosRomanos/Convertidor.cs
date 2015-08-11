@@ -27,10 +27,15 @@ namespace ConversiorNumerosRomanos
         {
             string salida = "";
 
+            if (entrada > 99)
+            {
+                salida = "C";
+                entrada -= 100;
+            }
             if (entrada > 9)
             {
                 salida += decenas[entrada / 10];
-                entrada = entrada%10;
+                entrada = entrada % 10;
             }
             salida += unidades[entrada];
             return salida;
