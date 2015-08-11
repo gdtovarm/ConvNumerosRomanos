@@ -30,8 +30,14 @@ namespace ConversiorNumerosRomanos
         //Llama al metodo de conversión
         private void botonConvertir_Click(object sender, EventArgs e)
         {
-            if (!ValidarEntrada()) {
+            if (!ValidarEntrada())
+            {
                 MessageBox.Show("El numero ingresado contiene caracteres no validos.");
+                return;
+            }
+            if (entrada >= 4000 || entrada < 0)
+            {
+                MessageBox.Show("El numero ingresado debe ser mayor a 0 y menor que 4000.");
                 return;
             }
 
