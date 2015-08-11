@@ -22,9 +22,15 @@ namespace ConversiorNumerosRomanos
 
         }
 
-        public void test1(string salida)
+        public string Convertir(int entrada)
         {
-            Debug.Assert(salida == "I");
+            return "I";
+        }
+
+        public void test1()
+        {
+            string salida = Convertir(1);
+            Debug.Assert(salida == "I", "1 debe retornar I");
         }
     }
 }

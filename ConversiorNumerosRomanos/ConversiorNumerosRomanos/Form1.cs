@@ -26,7 +26,8 @@ namespace ConversiorNumerosRomanos
 
         private void botonConvertir_Click(object sender, EventArgs e)
         {
-            
+            salida = convertidor.Convertir(entrada);
+            convertidor.test1();
         }
     }
 }
